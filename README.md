@@ -16,7 +16,7 @@ pip install python-dotenv
 
 ## 使い方
 
-BOTの基本設定をしてください。
-Systemdでも直接でもいいですが、起動させます。
+BOTの基本設定をしてください。権限はView Channels、Send Messages、Move Menbersが最低限あれば大丈夫です。  
+Systemdでも直接でもいいですが、起動させます。  
 「!countdown xx」（xxは秒数）と入力するとカウントダウンが始まります。
-0になると5秒後に切断します。
+0になると5秒後に切断します。  

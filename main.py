@@ -18,7 +18,7 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
 # チャンネルIDを書き換えてください
-# テキストチャンネルにはBOT起動のメッセージが飛びます。
+# テキストチャンネルにはBOT起動のメッセージと入退室メッセージが飛びます。
 TEXT_CHANNEL_ID = "テキストチャンネルのID"
 VOICE_CHANNEL_ID = "ボイスチャンネルのID"
 
