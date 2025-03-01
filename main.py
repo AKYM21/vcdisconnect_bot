@@ -13,9 +13,12 @@ import asyncio
 load_dotenv()
 
 # 自分のBotのアクセストークンに置き換えてください
+# .envファイルを書き換えるのをおすすめしますが、もし直接書く場合は次のようにしてください
+# TOKEN = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
-# チャンネルID・ロールID
+# チャンネルIDを書き換えてください
+# テキストチャンネルにはBOT起動のメッセージが飛びます。
 TEXT_CHANNEL_ID = "テキストチャンネルのID"
 VOICE_CHANNEL_ID = "ボイスチャンネルのID"
 
@@ -35,7 +38,7 @@ async def on_ready():
     # 挨拶する
     channel = bot.get_channel(TEXT_CHANNEL_ID)
     print(channel)
-    await channel.send('案内BOTが起動しました。ｺﾝﾁﾊ!')
+    await channel.send('VC Disconnect BOTが起動しました。ｺﾝﾁﾊ!')
 
 # ボイスチャンネルに参加した場合の通知
 @bot.event
